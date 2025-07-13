@@ -5,7 +5,7 @@ Official Go client for GitDB - GitHub-backed NoSQL database.
 ## Installation
 
 ```bash
-go get github.com/karthikeyanV2K/gitdb-client
+go get github.com/karthikeyanV2K/gitdb-go-client
 ```
 
 ## Quick Start
@@ -16,7 +16,7 @@ package main
 import (
     "fmt"
     "log"
-    "github.com/karthikeyanV2K/gitdb-client/gitdb"
+    "github.com/karthikeyanV2K/gitdb-go-client/gitdb"
 )
 
 func main() {
@@ -103,7 +103,7 @@ Create a token at: https://github.com/settings/tokens
 ### Client Initialization
 
 ```go
-import "github.com/karthikeyanV2K/gitdb-client/gitdb"
+import "github.com/karthikeyanV2K/gitdb-go-client/gitdb"
 
 // Basic initialization
 client := gitdb.NewClient("token", "owner", "repo")
@@ -323,7 +323,7 @@ if err != nil {
 import (
     "net/http"
     "time"
-    "github.com/karthikeyanV2K/gitdb-client/gitdb"
+    "github.com/karthikeyanV2K/gitdb-go-client/gitdb"
 )
 
 // Create custom HTTP client
@@ -370,7 +370,7 @@ import (
     "fmt"
     "log"
     "time"
-    "github.com/karthikeyanV2K/gitdb-client/gitdb"
+    "github.com/karthikeyanV2K/gitdb-go-client/gitdb"
 )
 
 type User struct {
@@ -474,7 +474,7 @@ package main
 
 import (
     "testing"
-    "github.com/karthikeyanV2K/gitdb-client/gitdb"
+    "github.com/karthikeyanV2K/gitdb-go-client/gitdb"
 )
 
 func TestClientCreation(t *testing.T) {
